@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Open Weather Forecast API</title>
+    <link rel="stylesheet" href="../Weather-Map-project/css/weather_map.css">
+    <link rel="stylesheet" href="../Weather-Map-project/layout/layout.css">
+</head>
+
+<body>
+<div class="page-wrapper ">
+    <div class="container">
+        <div class="row header justify-center justify-space-between">
+            <h1>Weather App</h1>
+            <div style="font-size: x-large; font-weight: bold; text-align: center">
+                <div class="row d-flex justify-space-between align-bottom" id="current-city">
+                    <div>Current City: </div>
+                    <div id="city-name">San Antonio</div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="row search-bar align-center">
+                <input placeholder="Search..." id="search-input">
+                <button id="search-button">Find</button>
+            </div>
+            <button class="row align-center justify-end" id="dark-mode">Dark Mode</button>
+        </div>
+        <div class="row d-flex justify-center align-center">
+            <div class="row top-card-info"></div>
+            <div class="column map-box">
+                <div id="map" style="height: 25rem; width: 50rem"></div>
+            </div>
+        </div>
+        <div class="row justify-space-between bottom-card-info"></div>
+    </div>
+</div>
+
+<!-- used to import minMaxTemps function -->
+<script src="../Weather-Map-project/js/min-max-temps.js"></script>
+
+
+<!-- include jQuery -->
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+<!-- include API key file -->
+<script src="../Weather-Map-project/js/keys.js"></script>
+<script src="../Weather-Map-project/js/weather_map.js"></script>
+<!-- additional code here -->
+
+<!-- used to import mapbox files -->
+<script src="../Weather-Map-project/js/mapbox-geocoder-utils.js"></script>
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css' rel='stylesheet'/>
+</body>
+</html>

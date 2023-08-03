@@ -1,0 +1,100 @@
+:root {
+    --primary-text: #cbe2ff;
+    --primary-text-dark: #395ccc;
+    --primary-color: #ffffff;
+    --primary-color-dark: #ffffff;
+    --secondary-color: #000000;
+    --secondary-color-dark: #fff;
+    --primary-font: 'playfair display', sans-serif;
+    --background: url("./img/Clouds.jpeg");
+}
+
+
+body {
+    background-image: var(--background);
+    color: var(--primary-color);
+    background-size: cover;
+    background-attachment: fixed;
+    justify-content: stretch;
+    font-weight: bold;
+}
+/* Dark Mode Theme */
+body[data-theme='dark-mode'] {
+    background-image: url("img/black rainfall.gif");
+    background-repeat: repeat;
+    color: var(--primary-color-dark);
+}
+
+.header {
+    display: flex;
+    font-size: x-large;
+    /*justify-content: space-between;*/
+    align-items: center;
+}
+body[data-theme='dark-mode'] .header, .weather-boxes {
+    color: var(--primary-color-dark);
+}
+
+.weather-boxes {
+    border: 3px solid #ffffff;
+    border-radius: 10px;
+    margin: 1rem;
+    font-size: medium;
+    text-align: center;
+    color: #000000;
+    font-weight: normal;
+    padding: 2rem;
+}
+
+
+body[data-theme='dark-mode'] .weather-boxes {
+    color: var(--primary-color-dark);
+    font-weight: bold;
+}
+
+
+.map-box {
+    margin: 2rem;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    height: auto
+}
+
+#search-button {
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    background-color: #87CEFA;
+    width: 6rem;
+    height: 2rem;
+    color: #fff;
+    margin: .5rem;
+}
+body[data-theme='dark-mode'] #dark-mode {
+    background-color: #525252;
+}
+
+body[data-theme='dark-mode'] #search-button {
+    background-color: #525252;
+}
+
+#dark-mode {
+    border: 2px solid;
+    border-radius: 5px;
+    width: 5rem;
+    height: 3rem;
+    color: #fff;
+    margin: .5rem;
+    background-color: #87CEFA;
+}
+
+input {
+    border-radius: 10px;
+    width: 40rem;
+    height: 2rem;
+    margin: .5rem;
+    border-color: var(--primary-color);
+}
+
+
+
+
