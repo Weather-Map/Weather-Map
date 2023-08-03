@@ -6,7 +6,7 @@
     --secondary-color: #000000;
     --secondary-color-dark: #fff;
     --primary-font: 'playfair display', sans-serif;
-    --background: url("./img/Clouds.jpeg");
+    --background: url("../img/Clouds.jpeg");
 }
 
 
@@ -20,7 +20,7 @@ body {
 }
 /* Dark Mode Theme */
 body[data-theme='dark-mode'] {
-    background-image: url("img/black rainfall.gif");
+    background-image: url("../img/black rainfall.gif");
     background-repeat: repeat;
     color: var(--primary-color-dark);
 }
