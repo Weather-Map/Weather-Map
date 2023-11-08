@@ -9,7 +9,6 @@
     --background: url("../img/Clouds.jpeg");
 }
 
-
 body {
     background-image: var(--background);
     color: var(--primary-color);
